@@ -1,0 +1,27 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    border:2px solid #FF6F00 ;
+    background-color:#FFA000 ;
+}
+
+.container-fluid {
+    border: 2px solid blue;
+}
+.nav-item{
+    border: 2px solid green;
+    margin-right: 40px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.nav-link {
+    color: black;
+}
