@@ -8,20 +8,90 @@ html {
     scroll-behavior: smooth;
 }
 
+/*BARRA DI NAVIGAZIONE*/
 .navbar {
     border:2px solid #FF6F00 ;
-    background-color:#FFA000 ;
+    background-color:#FFA000; 
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 10vh;
 }
 
-.container-fluid {
-    border: 2px solid blue;
+.navbar-nav {
+    justify-content: space-between;
+    display: flex;
 }
+
 .nav-item{
-    border: 2px solid green;
-    margin-right: 40px;
     font-size: 23px;
+    display: flex;
     font-weight: bold;
+    border: 2px solid blue;
+    margin-right: 30px;
+    flex:1;
 }
 .nav-link {
     color: black;
+}
+
+/*HOME*/
+.home-container {
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    height: 854px;
+    display: flex;
+    margin: 0 auto 0 auto;
+    background-image: url(images/sunset-mountains-small.jpg) ;
+}
+
+.home-container h1 {
+    align-self: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: #e0e0e0;
+}
+.home-container p {
+    align-self: center;
+    color: #ffffff;
+}
+
+/*ABOUT ME*/
+.about-me-container {
+    border: 2px solid red;
+    width: 90vw;
+    margin: 10vh auto 0 auto;
+    height: 90vh;
+    align-content: center;
+}
+
+.about-me-page {
+    display: flex;
+    border: 2px solid black;
+
+}
+
+.about-me-text {
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 45vw;
+    height: 90vh;
+    flex-direction: column;
+}
+.about-me-text h3 {
+    display: flex;
+}
+
+.about-me-text p {
+    display: flex; 
+}
+
+.profile-pic {
+    border: 2px solid orange;
+    display: flex;
+    width: 45vw;
+    height: 90vh;
 }
