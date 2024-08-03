@@ -54,9 +54,10 @@ body {
     height: 1000px;
     display: flex;
     margin: 0 auto 0 auto;
-    background-image: url(images/sunset-mountains-small.jpg) ;
+    background-image: url(images/ai-trees.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .home-container h1 {
@@ -125,14 +126,30 @@ body {
 .skills-container {
     width: 100vw;
     background-color: #ffffff;
-    height: 50px;
+    height: 100vh;
     border: 2px solid #E65100;
     margin-top: 10vh;
+}
+
+.skills { 
+    height: 60vh;
+    width: 100%;
+    padding: 100px;
+    border: 3px solid #ffffff;
+}
+.parallax {
+    background-image: url(images/ai-space.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 /*PROGETTI*/
 .cards-container {
     
-    margin: 50px auto 0 auto;
+    margin: 300px auto 0 auto;
     height: 50vh;
     width: 85vw;
     display: flex;
@@ -174,17 +191,6 @@ background-repeat: no-repeat;
     margin: 0 auto 0 auto;
     height: 100px;
     width: 100px;
-}
-#item-1 {
-    width: 80vw;
-    height: 80vh;
-    background-size: 432px;
-}
-.col-4 {
-    width: 25%;
-}
-.col-8 {
-    width: 50%;
 }
 
 .card-body {
