@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: #D1C4E9;
+    background-color: #1f1531;
     width: 100vw;
 }
 
@@ -35,11 +35,178 @@ body {
 .offcanvas-end {
     background-color: #B39DDB;
 }
+
 .nav-item a {
     color: #211535;
     font-size: 18px;
 }
-.btn-close {background-color: #7753b4;}
+
+.btn-close {
+    background-color: #7753b4;
+}
+
+/*HOME*/
+.home-container {
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    display: flex;
+    margin: 0 auto 0 auto;
+    background-image: url(images/ai-trees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-container h1 {
+    align-self: center;
+    font-size: 80px;
+    font-weight: 800;
+    color: #e0e0e0;
+    text-shadow: 2px 2px 4px black;
+}
+
+.home-container p {
+    align-self: center;
+    color: #ffffff;
+}
+
+/*SKILLS PC-TABLET*/
+.skills-container {
+    width: 100vw;
+    background-color: #ffffff;
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+.skills-box {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.skills {
+    border-radius: 40px;
+    margin-right: 20px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.skills h2 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills ul {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills li {
+    display: flex;
+    font-size: 25px;
+}
+
+.skills p {
+    display: flex;
+    font-size: 25px;
+}
+
+.parallax {
+    background-image: url(images/ai-space.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+
+/*PROGETTI PC-TABLET*/
+.subtitle-prjct h1 {
+    text-align: center;
+    color: #211535;
+    font-size: 70px;
+}
+
+.cards-container {
+    margin: 100px auto 0 auto;
+    height: auto;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    width: 432px;
+    height: 432px;
+    border: 4px solid #673ab7;
+    display: inline;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.card:hover {
+    border: 2px solid #ffffff;
+}
+
+.card-3:hover {
+    border: 2px solid #263238;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    background-size: 432px;
+    background-repeat: no-repeat;
+}
+
+.card-1 {
+    background-image: url(images/developer-guy-1.jpg);
+}
+
+.card-2 {
+    background-image: url(images/developer-girl-1.png);
+}
+
+.card-3 {
+    background-image: url(images/developer-guy-3.jpg);
+}
+
+.card-img-top {
+    margin: 0 auto 0 auto;
+    height: 100px;
+    width: 100px;
+}
+
+.card-body {
+    color: #ffffff;
+    text-shadow: 4px 4px 8px black;
+}
+
+.card-body h5 {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+button {
+    color: black;
+}
+
 /*CONTATTAMI*/
 
 .contact-me-section {
@@ -50,7 +217,6 @@ body {
     justify-content: center;
     display: flex;
     background-color: #c0ace4;
-    border: 2px solid #673ab7;
 }
 
 .contact-me-section h2 {
@@ -81,37 +247,64 @@ body {
 .contact-me-section button:visited {
     background-color: #673ab7;
 }
+
+/*SOCIAL PC-TABLET*/
+footer img {
+    width: 70px;
+    height: 70px;
+}
+
+footer {
+    align-items: center;
+    width: 100vw;
+    background-color: #959b9e;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+footer p {
+    color: #673ab7;
+    width: 50vw;
+    display: flex;
+    margin-left: 3vw;
+}
+
+.social {
+    display: flex;
+    width: 30vw;
+}
+
+.social a {
+    display: flex;
+}
+
 @media only screen and (max-width:400px) {
 
     /*BARRA DI NAVIGAZIONE*/
     .offcanvas {
         width: 50vw;
     }
+
     /*HOME*/
     .home-container {
-        justify-content: center;
-        align-items: center;
         height: 80vh;
         width: 100vw;
-        display: flex;
-        margin: 0 auto 0 auto;
         background-image: url(images/ai-trees-vertical.png);
-        background-repeat: no-repeat;
         background-size: 80vh;
-        background-attachment: fixed;
     }
 
     .home-container h1 {
         font-size: 40px;
-        font-weight: 800;
-        color: #e0e0e0;
-        text-shadow: 2px 2px 4px black;
     }
 
     .home-container p {
         font-size: 10px;
-        align-self: center;
-        color: #ffffff;
     }
 
     /*ABOUT ME*/
@@ -173,91 +366,48 @@ body {
 
     .skills-box {
         flex-direction: column;
-        display: flex;
         height: 60vh;
-        width: 100%;
         padding: 0;
     }
 
     .skills {
-        border-radius: 40px;
-        margin-right: 20px;
         width: 100vw;
-        display: flex;
-        justify-content: center;
-        color: #ffffff;
-        flex-direction: column;
-        padding: 20px;
     }
 
     .skills h2 {
-        font-size: 60px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .skills ul {
-        justify-content: left;
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        font-size: 50px;
     }
 
     .skills li {
-        display: flex;
         font-size: 18px;
     }
 
     .skills p {
-        display: flex;
         font-size: 18px;
     }
 
     .parallax {
         background-image: url(images/ai-abstract.jpg);
-        background-repeat: no-repeat;
         background-size: contain;
         height: 100vh;
-        padding-top: 15vh;
-        padding-bottom: 15vh;
     }
 
 
     /*PROGETTI*/
     .subtitle-prjct h1 {
-        text-align: center;
-        color: #211535;
         font-size: 45px;
         margin-top: 15vh;
     }
 
     .cards-container {
         margin: 30px auto 0 auto;
-        height: auto;
-        width: 85vw;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
     }
 
     .card {
-        display: flex;
         width: 300px;
         height: 300px;
-        border: 4px solid #673ab7;
-        display: inline;
         margin-right: 25px;
         margin-top: 25px;
-    }
-
-    .card:hover {
-        border: 2px solid #ffffff;
-    }
-
-    .card-3:hover {
-        border: 2px solid #263238;
     }
 
     .card-1,
@@ -267,103 +417,39 @@ body {
         background-repeat: no-repeat;
     }
 
-    .card-1 {
-        background-image: url(images/developer-guy-1.jpg);
-    }
-
-    .card-2 {
-        background-image: url(images/developer-girl-1.png);
-    }
-
-    .card-3 {
-        background-image: url(images/developer-guy-3.jpg);
-    }
-
     .card-img-top {
         margin: 0 auto 0 auto;
         height: 60px;
         width: 60px;
     }
 
-    .card-body {
-        color: #ffffff;
-        text-shadow: 4px 4px 8px black;
-    }
-
     .card-body h5 {
         font-size: 30px;
         font-weight: bold;
-
-    }
-
-    button {
-        color: black;
     }
 
     /*SOCIAL*/
-    footer img {
-        width: 70px;
-        height: 70px;
-    }
-
-    footer {
-        align-items: center;
-        width: 100vw;
-        background-color: #959b9e;
-        border-top: 2px solid #673ab7;
-    }
-
     .footer-content {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 100vw;
+        margin: 0 auto 0 auto;
     }
 
     footer p {
         color: #673ab7;
         display: flex;
-        margin-left: 3vw;
         font-size: 12px;
     }
 
     .social {
+        justify-content: center;
+        width: 100vw;
         display: flex;
-        margin-bottom: 20px;
     }
 }
 
 @media only screen and (min-width:401px) and (max-width:960px) {
 
-    /*HOME*/
-    .home-container {
-        justify-content: center;
-        align-items: center;
-        height: 1000px;
-        display: flex;
-        margin: 0 auto 0 auto;
-        background-image: url(images/ai-trees.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        border-bottom: 2px solid #673ab7;
-    }
-
-    .home-container h1 {
-        align-self: center;
-        font-size: 80px;
-        font-weight: 800;
-        color: #e0e0e0;
-        text-shadow: 2px 2px 4px black;
-    }
-
-    .home-container p {
-        align-self: center;
-        color: #ffffff;
-    }
-
-    /*ABOUT ME*/
+    /*ABOUT ME TABLET*/
     .about-me-container {
         width: 100vw;
         margin: 10vh auto 0 auto;
@@ -413,220 +499,23 @@ body {
         height: 400px;
     }
 
-    /*SKILLS*/
-    .skills-container {
-        width: 100vw;
-        background-color: #ffffff;
-        height: 90vh;
-        border: 2px solid #5E35B1;
-        margin-top: 10vh;
-    }
 
-    .skills-box {
-        display: flex;
-        height: 60vh;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .skills {
-        border-radius: 40px;
-        margin-right: 20px;
-        height: 100%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        color: #ffffff;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .skills h2 {
-        font-size: 60px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .skills ul {
-        justify-content: left;
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .skills li {
-        display: flex;
-        font-size: 25px;
-    }
-
-    .skills p {
-        display: flex;
-        font-size: 25px;
-    }
-
-    .parallax {
-        background-image: url(images/ai-space.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 90vh;
-        padding-top: 15vh;
-        padding-bottom: 15vh;
-    }
-
-
-    /*PROGETTI*/
-    .subtitle-prjct h1 {
-        text-align: center;
-        color: #211535;
-        font-size: 70px;
-    }
-
-    .cards-container {
-        margin: 100px auto 0 auto;
-        height: auto;
-        width: 85vw;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        display: flex;
-        width: 432px;
-        height: 432px;
-        border: 4px solid #673ab7;
-        display: inline;
-        margin-right: 50px;
-        margin-top: 50px;
-    }
-
-    .card:hover {
-        border: 2px solid #ffffff;
-    }
-
-    .card-3:hover {
-        border: 2px solid #263238;
-    }
-
-    .card-1,
-    .card-2,
-    .card-3 {
-        background-size: 432px;
-        background-repeat: no-repeat;
-    }
-
-    .card-1 {
-        background-image: url(images/developer-guy-1.jpg);
-    }
-
-    .card-2 {
-        background-image: url(images/developer-girl-1.png);
-    }
-
-    .card-3 {
-        background-image: url(images/developer-guy-3.jpg);
-    }
-
-    .card-img-top {
-        margin: 0 auto 0 auto;
-        height: 100px;
-        width: 100px;
-    }
-
-    .card-body {
-        color: #ffffff;
-        text-shadow: 4px 4px 8px black;
-    }
-
-    .card-body h5 {
-        font-size: 40px;
-        font-weight: bold;
-
-    }
-
-    button {
-        color: black;
-    }
-
-    /*SOCIAL*/
-    footer img {
-        width: 70px;
-        height: 70px;
-    }
-
-    footer {
-        align-items: center;
-        width: 100vw;
-        background-color: #959b9e;
-        border-top: 2px solid #673ab7;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100vw;
-    }
-
-    footer p {
-        color: #673ab7;
-        width: 50vw;
-        display: flex;
-        margin-left: 3vw;
-    }
-
-    .social {
-        display: flex;
-        width: 30vw;
-    }
 }
 
 @media only screen and (min-width:961px) {
 
-    /*HOME*/
-    .home-container {
-        justify-content: center;
-        align-items: center;
-        height: 1000px;
-        display: flex;
-        margin: 0 auto 0 auto;
-        background-image: url(images/ai-trees.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        border-bottom: 2px solid #673ab7;
-    }
 
-    .home-container h1 {
-        align-self: center;
-        font-size: 80px;
-        font-weight: 800;
-        color: #e0e0e0;
-        text-shadow: 2px 2px 4px black;
-    }
 
-    .home-container p {
-        align-self: center;
-        color: #ffffff;
-    }
-
-    /*ABOUT ME*/
+    /*ABOUT ME PC*/
     .about-me-container {
         width: 90vw;
         margin: 10vh auto 0 auto;
         height: 90vh;
         align-content: center;
-        border: 2px solid blue;
     }
 
     .about-me-page {
         display: flex;
-
-        border: 2px solid yellow;
     }
 
     .about-me-text {
@@ -639,7 +528,6 @@ body {
     }
 
     .about-me-text h3 {
-        border: 2px solid white;
         color: white;
         justify-content: center;
         display: flex;
@@ -671,175 +559,5 @@ body {
         height: 400px;
     }
 
-    /*SKILLS*/
-    .skills-container {
-        width: 100vw;
-        background-color: #ffffff;
-        height: 90vh;
-        border: 2px solid #5E35B1;
-        margin-top: 10vh;
-    }
 
-    .skills-box {
-        display: flex;
-        height: 60vh;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .skills {
-        border-radius: 40px;
-        margin-right: 20px;
-        height: 100%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        color: #ffffff;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .skills h2 {
-        font-size: 60px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .skills ul {
-        justify-content: left;
-        height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .skills li {
-        display: flex;
-        font-size: 25px;
-    }
-
-    .skills p {
-        display: flex;
-        font-size: 25px;
-    }
-
-    .parallax {
-        background-image: url(images/ai-space.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 90vh;
-        padding-top: 15vh;
-        padding-bottom: 15vh;
-    }
-
-
-    /*PROGETTI*/
-    .subtitle-prjct h1 {
-        text-align: center;
-        color: #211535;
-        font-size: 70px;
-    }
-
-    .cards-container {
-        margin: 100px auto 0 auto;
-        height: auto;
-        width: 85vw;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        display: flex;
-        width: 432px;
-        height: 432px;
-        border: 4px solid #673ab7;
-        display: inline;
-        margin-right: 50px;
-        margin-top: 50px;
-    }
-
-    .card:hover {
-        border: 2px solid #ffffff;
-    }
-
-    .card-3:hover {
-        border: 2px solid #263238;
-    }
-
-    .card-1,
-    .card-2,
-    .card-3 {
-        background-size: 432px;
-        background-repeat: no-repeat;
-    }
-
-    .card-1 {
-        background-image: url(images/developer-guy-1.jpg);
-    }
-
-    .card-2 {
-        background-image: url(images/developer-girl-1.png);
-    }
-
-    .card-3 {
-        background-image: url(images/developer-guy-3.jpg);
-    }
-
-    .card-img-top {
-        margin: 0 auto 0 auto;
-        height: 100px;
-        width: 100px;
-    }
-
-    .card-body {
-        color: #ffffff;
-        text-shadow: 4px 4px 8px black;
-    }
-
-    .card-body h5 {
-        font-size: 40px;
-        font-weight: bold;
-
-    }
-
-    button {
-        color: black;
-    }
-
-    /*SOCIAL*/
-    footer img {
-        width: 70px;
-        height: 70px;
-    }
-
-    footer {
-        align-items: center;
-        width: 100vw;
-        background-color: #959b9e;
-        border-top: 2px solid #673ab7;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100vw;
-    }
-
-    footer p {
-        color: #673ab7;
-        width: 50vw;
-        display: flex;
-        margin-left: 3vw;
-    }
-
-    .social {
-        display: flex;
-        width: 30vw;
-    }
 }
-
